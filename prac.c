@@ -1,4 +1,5 @@
 /*Stack implementation using array*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #define lim 5
