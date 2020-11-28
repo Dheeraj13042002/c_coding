@@ -117,7 +117,7 @@ void Insert_at_end(void){
     scanf("%d",&newnode->data);
     newnode->next = NULL;   
     if(head == NULL){
-        head = temp;
+        head = newnode;
     }
     else{
         temp = head;
@@ -211,12 +211,19 @@ void Delete_from_pos(void){
     }
     else{
         temp = head;
+        if(pos == 1){
+            xyz = temp;
+            xyz = xyz->next;
+            head = xyz;
+        }
+        else{
         while(i<pos){
             xyz = temp;
             temp = temp->next;
             i++;
         }
         xyz->next = temp->next;
+        }
         free(temp);
         printf("node at %d position deleted successfully",pos);
     }
