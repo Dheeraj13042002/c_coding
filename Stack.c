@@ -2,8 +2,8 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#define lim 5
-int stack[lim], top=-1;
+// #define lim 5
+int stack[5], top=-1;
 void push(int ele);
 int isFull();
 int isEmpty();
@@ -57,7 +57,7 @@ void push(int ele){
     }
 }
 int isFull(){
-    if(top==lim-1){
+    if(top == 4){
         return 1;
     }
     else{

@@ -84,7 +84,6 @@ void Display(void){
         printf("Empty List\n");
     }
     else{
-    
     while(temp != NULL){
         
         printf("%d",temp->data);
